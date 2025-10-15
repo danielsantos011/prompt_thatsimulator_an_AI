@@ -22,18 +22,18 @@ A interface é bem tranquila de usar, e você pode:
 - **HTML**: Pra estruturar a página
 - **CSS**: Pra dar aquele visual bacana e responsivo
 - **JavaScript**: Pra deixar o app interativo e dinâmico
-- **localStorage** (se for o caso): Pra guardar os dados no navegador mesmo que você feche a página
+- **localStorage**: Pra guardar os dados no navegador mesmo que você feche a página
 
 ## Como Usar
 
 1. **Clonar o repositório**:
     ```bash
-    git clone https://github.com/seu-usuario/gerenciador-de-prompts.git
+    git clone https://github.com/danielsantos011/prompt_thatsimulator_an_AI.git
     ```
 
 2. **Instalar dependências** (se precisar):
     ```bash
-    cd gerenciador-de-prompts
+    cd prompt_thatsimulator_an_AI
     # Se tiver alguma dependência, use
     npm install
     ```

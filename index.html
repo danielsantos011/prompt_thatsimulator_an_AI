@@ -1,20 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/assets/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <title>Prompts</title>
-</head>
-<body>
-      <div class="app">
-        <aside class="sidebar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import Inter font (weights 400,500,600,700) from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prompts</title>
+  </head>
+  <body>
+    <div class="app">
+      <button class="icon-button open-toggle" id="btn-open">
+        <img src="assets/assets/open.svg" alt="Abrir Menu" class="icon" />
+      </button>
 
-        </aside>
-        <main class="main">
-          
-        </main>
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <img src="assets/assets/logo.svg" alt="Logo" class="logo" />
+
+          <button class="icon-button" id="btn-collapse">
+            <img
+              src="assets/assets/collapse.svg"
+              alt="Fechar Menu"
+              class="icon"
+            />
+          </button>
+        </header>
+
+        <div class="sidebar-content">
+          <div class="search-container">
+            <span class="search-icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 15C12.3137 15 15 12.3137 15 9C15 5.68629 12.3137 3 9 3C5.68629 3 3 5.68629 3 9C3 12.3137 5.68629 15 9 15Z"
+                  stroke="#737373"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16.5 16.5L13.5 13.5"
+                  stroke="#737373"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Buscar prompt..."
+              autocomplete="off"
+            />
+          </div>
+          <button class="btn-new-prompt" id="btn-new">+ Novo Prompt</button>
+          <div class="search-divider"></div>
+          <ul class="prompt-list" id="prompt-list"></ul>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="mainheader">
+          <div class="btnoutline">
+            <img class="icon" src="assets/assets/copy.svg" alt="icon3102" />
+            <span class="btnoutline-text" id="btn-copy">Copiar</span>
+          </div>
+          <div class="btnprimary" id="btn-save">
+            <span class="btnprimary-text">Salvar</span>
+          </div>
+        </div>
+        <div
+          data-placeholder="Título do Prompt"
+          class="editable-wrapper"
+          id="title-wrapper"
+        >
+          <h1
+            class="prompt-title"
+            id="prompt-title"
+            contenteditable="true"
+          ></h1>
+        </div>
+        <div
+          data-placeholder="Conteúdo do prompt ..."
+          class="editable-wrapper"
+          id="content-wrapper"
+        >
+          <div
+            class="prompt-content"
+            id="prompt-content"
+            contenteditable="true"
+          ></div>
+        </div>
+      </main>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

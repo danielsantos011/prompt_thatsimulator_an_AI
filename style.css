@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: border-box;
+}
+
+body{
+  background-color: var(--gray-900);
+}
+
+
+:root{
+
+--white: #d5afaf;
+
+
+--accent-600: #4863f7;
+--accent-500: #787bd7;
+
+--alert-600: #ff5c5c;
+
+--gray-900: #0d0d0d;
+--gray-800: #111111;
+--gray-200: #424242;
+--gray-100: #737373;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 63px 124px;
+  gap: 32px;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+

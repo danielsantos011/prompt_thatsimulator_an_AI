@@ -44,6 +44,10 @@ A interface é bem tranquila de usar, e você pode:
     - Clique em **+ Novo Prompt** pra adicionar um novo.
     - Edite o título e conteúdo do prompt na parte direita.
     - Salve ou copie o texto quando precisar.
+  
+5. **Foto do Projeto**
+   <img width="1907" height="900" alt="image" src="https://github.com/user-attachments/assets/e8dc858c-9754-4336-9b5e-b88dfa0f79b0" />
+
 
 ## Como Contribuir
 
